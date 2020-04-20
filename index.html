@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cyber Squad</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css" >
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .ifram{
+            width:100vw;
+            padding-top:2vh;
+            height:130vh;
+            border:none;
+        }
+    .container-main{
+        height: auto;
+    }
+    @media(max-width:768px){
+        .image1{
+            height: 40vh;
+        }
+        .ifram{
+            height: 200vh;
+        }
+    }
+    .navbar-dark {
+     background-color: rgba(25,40,73,0.8);
+}
+.footer{
+    background-color: #b1a296;
+}
+h1{
+font-size:30px;
+color:white;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index:-1;
+}
+    </style>
+</head>
+
+<body >
+    <video autoplay muted loop id="myVideo">
+        <source src="vid.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+        <div class="container">
+                
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="Navbar">
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a id="1"  class="nav-link active" style="background:#4CAF50;color: white;" href="basic1.html" target="bottom" onclick="change(0)">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" id="2" href="About us.html" target="bottom" onclick="change(1)">About us</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link active" id="3" href="register.html"  target="bottom" onclick="change(2)">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link active" id="4" href="login1.html"  target="bottom" onclick="change(3)">Login</a></li>
+                        <li class="nav-item"><a class="nav-link active" id="5" href="help&settings.html" target="bottom" onclick="change(4)">Help & Settings</a></li>
+                    </ul>
+            </div>
+            </div>
+            
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12">
+                    <h1 align=center>Fleet Management System</h1>
+	  <p align="center" style="color:white">For all your tracking needs which works with any GPS tracker in the world</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+
+    <div class="container container-main" style="">
+        <div class="row row-content">
+            <iframe class="ifram" name="bottom"  src="basic1.html"></iframe>
+        </div>
+</div>  
+
+
+        
+
+        
+        
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2"> 
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		              Department of cse<br>
+		              GMR Institute of technology<br>
+		              Rajam<br>
+		              <i class="fa fa-phone fa-lg"></i> +91 1234567890<br>
+		              <i class="fa fa-fax fa-lg"></i> +91 0123456789<br>
+		              <a href="#" ><i class="fa fa-fw fa-envelope" style="color:white"></i>&nbsp;chappativijayalakshmi@gmail.com</a> 
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/naveen.prince.1234"><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/naveen-chode-b417b5169/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/ChodeNaveen?s=08"><i class="fa fa-twitter fa-lg"></i></a>
+                        
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p></p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <script>
+        var ids=["1","2","3","4","5"];
+        function change(x)
+        {
+            document.getElementById(ids[x]).style.background="#4CAF50";
+            document.getElementById(ids[x]).style.color="white";
+            for(i=0;i<5;i++)
+            {
+                if(i!=x)
+                {
+                    document.getElementById(ids[i]).style.background="transparent";
+                    
+                }
+            }
+        }
+        
+        </script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+</body>
+
+</html>

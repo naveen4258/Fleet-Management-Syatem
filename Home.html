@@ -1,0 +1,183 @@
+<html>
+<head>
+  <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+<title> Home </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+/*body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+top:0;
+  
+	background-color:rgba(25,40,73,0.8);
+  padding: 1px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+	background-color:rgba(25,40,73,0.8);
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}*/
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-dark {
+     background-color: #379683;
+}
+.row-header{
+    margin: 0px auto;
+    padding: 0px auto; 
+}
+.row-content{
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+.footer{
+    background-color: #b1a296;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+.jumbotron{
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: #501b1d;
+    color: floralwhite;
+}
+.address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0F0F0F;
+
+}
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.carousel{
+    background: #512DA8;
+}
+.carousel-item{
+    height: 300px;
+}
+.carousel-item img{
+    position: absolute;
+    top:0;
+    left: 0;
+    min-height: 300px;
+    
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index:-1;
+}
+
+.content {
+  
+  top: 0;
+  right:0;
+  width: 100%;
+
+}
+h1{
+font-size:20px;
+color:white;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="vid.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+	<!--<div class="header">
+	  <h1>Fleet Management System</h1>
+	  <p style="color:white">For all your tracking needs which works with any GPS tracker in the world</p>
+	</div>-->
+  <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+    <div class="container">
+            
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+          <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+              <div class="collapse navbar-collapse" id="Navbar">
+                  <ul class="navbar-nav mr-auto">
+                          <li class="nav-item active"><a id="1"  class="nav-link active" href="basic.html" target="bottom" onclick="change(0)">Home</a></li>
+                          <li class="nav-item"><a class="nav-link active" id="2" href="About us.html" target="bottom" onclick="change(1)">About us</a></li>
+                          <li class="nav-item"><a class="nav-link active" id="3" href="Contact.html"  target="bottom" onclick="change(2)">Contact</a></li>
+                          <li class="nav-item"><a class="nav-link active" id="4" href="signup.html"  target="bottom" onclick="change(3)">Registration</a></li>
+                          <li class="nav-item"><a class="nav-link active" id="5" href="login.html"  target="bottom" onclick="change(4)">Login</a></li>
+                          <li class="nav-item"><a class="nav-link active" id="6" href="help&settings.html" target="bottom" onclick="change(5)">Help & Settings</a></li>
+                  </ul>
+          </div>
+          </div>
+        </div>
+      </nav>	
+<!--	<div id="navbar">
+	  
+	 <a id="3" href="Contact.html"  target="bottom" onclick="change(2)">Contact</a>
+	<a id="4" href="signup.html"  target="bottom" onclick="change(3)">Registration</a>
+	<a id="5" href="login.html"  target="bottom" onclick="change(4)">Login</a>
+	<a id="6" href="help&settings.html" target="bottom" onclick="change(5)">Help & Settings</a>
+	</div>-->
+
+<script>
+var ids=["1","2","3","4","5","6"];
+function change(x)
+{
+	document.getElementById(ids[x]).style.background="#4CAF50";
+	document.getElementById(ids[x]).style.color="white";
+	for(i=0;i<7;i++)
+	{
+		if(i!=x)
+		{
+			document.getElementById(ids[i]).style.background="transparent";
+			
+		}
+	}
+}
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<iframe name="bottom" style="width:95vw;padding-top:2vh;height:150vh;border:none;" src="basic.html"></iframe>
+</body></html>
